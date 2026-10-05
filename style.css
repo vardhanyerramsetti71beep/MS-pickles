@@ -1,0 +1,174 @@
+/* Custom CSS for MS Pickles Lively Experience */
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1ede4;
+}
+::-webkit-scrollbar-thumb {
+  background: #c5973b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0f4c2c;
+}
+
+/* Category Filter Active Styling */
+.cat-pill {
+  background-color: #f3ede2;
+  color: #4b3820;
+  border: 1px solid #dfd3c0;
+}
+.cat-pill:hover {
+  background-color: #e8dcce;
+}
+.cat-pill.active {
+  background: linear-gradient(135deg, #0d3a22 0%, #155734 100%);
+  color: #ffffff;
+  border-color: #0d3a22;
+  box-shadow: 0 4px 12px rgba(13, 58, 34, 0.25);
+}
+
+/* Lively Floating Spices in Hero */
+.floating-spice {
+  position: absolute;
+  font-size: 1.75rem;
+  user-select: none;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-24px) rotate(15deg);
+  }
+}
+
+@keyframes floatMid {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-16px) rotate(-12deg);
+  }
+}
+
+@keyframes floatFast {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-28px) rotate(20deg);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+.animate-float-mid {
+  animation: floatMid 4.5s ease-in-out infinite;
+}
+.animate-float-fast {
+  animation: floatFast 3.5s ease-in-out infinite;
+}
+
+/* Product Card Polish */
+.product-card {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 30px -10px rgba(15, 76, 44, 0.15), 0 10px 15px -5px rgba(229, 160, 13, 0.1);
+}
+
+/* Weight Badge Selection Buttons */
+.weight-btn {
+  transition: all 0.15s ease-in-out;
+}
+.weight-btn.selected {
+  background: #0f4c2c;
+  color: #ffffff;
+  border-color: #0f4c2c;
+  font-weight: 700;
+  box-shadow: 0 2px 6px rgba(15, 76, 44, 0.3);
+}
+
+/* Toast Animations */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOutRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.toast-enter {
+  animation: slideInRight 0.3s ease forwards;
+}
+.toast-exit {
+  animation: fadeOutRight 0.3s ease forwards;
+}
+
+/* Pulsing Badge Effect */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(220, 38, 38, 0);
+  }
+}
+.pulse-glow {
+  animation: pulseGlow 2s infinite;
+}
+
+/* Print View for Invoices */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #receiptModal, #receiptContent, #receiptContent * {
+    visibility: visible;
+  }
+  #receiptModal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: white !important;
+    padding: 0 !important;
+  }
+  #receiptContent {
+    box-shadow: none !important;
+    border: none !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}

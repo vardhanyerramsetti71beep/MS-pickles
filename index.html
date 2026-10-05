@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MS Pickles | Authentic Andhra Homemade Pickles & Spice Powders</title>
+  <meta name="description" content="Authentic Andhra homemade spicy chicken pickle, mutton, prawns, gongura, pandumirchi pachadi & karam podis. 100% homemade, door delivery across India. Order on WhatsApp 6304433996.">
+  <link rel="icon" type="image/jpeg" href="public/chicken_pickle.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Noto+Sans+Telugu:wght@400;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#062013',
+              deep: '#0a321e',
+              emerald: '#0f4c2c',
+              gold: '#e5a00d',
+              goldLight: '#fde68a',
+              amber: '#d97706',
+              chili: '#dc2626',
+              chiliDark: '#991b1b',
+              cream: '#fdfbf7',
+              creamDark: '#f7f2e7',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            telugu: ['"Noto Sans Telugu"', 'sans-serif'],
+            display: ['"Cinzel"', 'serif'],
+            heading: ['"Outfit"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Canvas Confetti for Celebration -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-brand-cream text-gray-800 font-sans antialiased overflow-x-hidden selection:bg-brand-gold selection:text-brand-dark">
+
+  <!-- Top Announcement Bar -->
+  <aside aria-label="Announcement" class="bg-gradient-to-r from-brand-chili via-red-700 to-brand-chili text-white py-2 px-4 text-xs sm:text-sm font-medium tracking-wide shadow-inner">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2 justify-center">
+        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold bg-white text-brand-chili shadow-sm animate-pulse">
+          ✨ 100% HOMEMADE
+        </span>
+        <span class="hidden md:inline text-amber-200">|</span>
+        <span>ఘుమఘుమలాడే అసలైన ఆంధ్రా రుచులు • Authentic Andhra Flavour & Homemade Taste</span>
+      </div>
+      <div class="flex items-center gap-4 text-xs">
+        <span class="flex items-center gap-1 font-semibold text-amber-300">
+          <i data-lucide="truck" class="w-3.5 h-3.5"></i> Doorstep Delivery (100g to 5kg)
+        </span>
+        <a href="https://wa.me/916304433996?text=Hello%20MS%20Pickles!%20I%20would%20like%20to%20order%20authentic%20pickles." 
+           target="_blank" 
+           class="flex items-center gap-1 bg-green-500 hover:bg-green-600 text-white font-bold px-2.5 py-0.5 rounded-full transition shadow-sm">
+          <i data-lucide="phone" class="w-3 h-3"></i> WhatsApp: 6304433996
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Navigation Header -->
+  <header class="sticky top-0 z-40 bg-brand-dark/95 backdrop-blur-md border-b border-brand-gold/30 text-white shadow-xl transition-all duration-300" id="mainHeader">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Logo / Identity -->
+        <a href="#" class="flex items-center gap-3 group">
+          <div class="relative w-12 h-12 rounded-full overflow-hidden border-2 border-brand-gold shadow-lg shadow-brand-gold/20 group-hover:scale-105 transition-transform duration-300">
+            <img src="public/chicken_pickle.jpg" alt="MS Pickles Logo" class="w-full h-full object-cover">
+            <span class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></span>
+          </div>
+          <div>
+            <div class="flex items-center gap-1.5">
+              <span class="font-display font-black text-2xl sm:text-3xl tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-brand-goldLight via-brand-gold to-amber-500">
+                MS PICKLES
+              </span>
+              <span class="text-xs bg-brand-gold/20 text-brand-gold font-bold px-1.5 py-0.5 rounded border border-brand-gold/40">
+                ఆంధ్రా
+              </span>
+            </div>
+            <p class="text-[11px] sm:text-xs text-emerald-200/90 font-medium tracking-wide">
+              Homemade Taste • Authentic Andhra Flavour
+            </p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold">
+          <a href="#hero" class="text-amber-100/90 hover:text-brand-gold transition">Home</a>
+          <a href="#featured" class="text-amber-100/90 hover:text-brand-gold transition flex items-center gap-1">
+            <span class="w-2 h-2 rounded-full bg-brand-chili animate-ping"></span>
+            Spicy Chicken Pickle
+          </a>
+          <a href="#menu" class="text-amber-100/90 hover:text-brand-gold transition">Our Pickles & Podis</a>
+          <a href="#why-us" class="text-amber-100/90 hover:text-brand-gold transition">Why MS Pickles</a>
+          <a href="#poster-section" class="text-amber-100/90 hover:text-brand-gold transition">View Poster</a>
+          <a href="#faq" class="text-amber-100/90 hover:text-brand-gold transition">FAQs</a>
+        </nav>
+
+        <!-- Right Quick Actions -->
+        <div class="flex items-center gap-3">
+          <!-- Language Toggle Button -->
+          <button id="langToggleBtn" class="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-brand-gold/40 text-xs font-bold text-brand-gold hover:bg-brand-gold/10 transition">
+            <i data-lucide="languages" class="w-3.5 h-3.5"></i>
+            <span id="langLabel">తెలుగు / EN</span>
+          </button>
+
+          <!-- Audio Bell Toggle -->
+          <button id="soundToggleBtn" title="Toggle Sound Feedback" class="p-2 rounded-full border border-white/20 text-gray-300 hover:text-brand-gold hover:border-brand-gold transition text-xs">
+            <i data-lucide="volume-2" id="soundIcon" class="w-4 h-4"></i>
+          </button>
+
+          <!-- Cart Button with Counter -->
+          <button id="openCartBtn" class="relative flex items-center gap-2 bg-gradient-to-r from-brand-gold to-amber-500 hover:from-amber-400 hover:to-amber-500 text-brand-dark font-extrabold px-4 py-2 rounded-full shadow-lg shadow-amber-900/30 transform hover:scale-105 active:scale-95 transition">
+            <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+            <span class="hidden sm:inline text-xs uppercase tracking-wider">Cart</span>
+            <span id="cartCountBadge" class="bg-brand-chili text-white text-xs font-black w-5 h-5 rounded-full flex items-center justify-center -mr-1 shadow-md">
+              0
+            </span>
+          </button>
+
+          <!-- Mobile Hamburger -->
+          <button id="mobileMenuBtn" class="lg:hidden p-2 text-white hover:text-brand-gold transition">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobileNav" class="hidden lg:hidden bg-brand-deep/98 border-t border-brand-gold/20 px-6 py-4 space-y-3 text-sm">
+      <a href="#hero" class="block py-2 text-white font-medium hover:text-brand-gold">Home</a>
+      <a href="#featured" class="block py-2 text-white font-medium hover:text-brand-gold">Spicy Chicken Pickle (Star)</a>
+      <a href="#menu" class="block py-2 text-white font-medium hover:text-brand-gold">All Pickles & Spice Powders</a>
+      <a href="#why-us" class="block py-2 text-white font-medium hover:text-brand-gold">Why MS Pickles</a>
+      <a href="#poster-section" class="block py-2 text-white font-medium hover:text-brand-gold">View Official Poster</a>
+      <a href="#faq" class="block py-2 text-white font-medium hover:text-brand-gold">FAQs & Contact</a>
+      <div class="pt-2 border-t border-white/10 flex items-center justify-between">
+        <a href="tel:6304433996" class="flex items-center gap-2 text-brand-gold font-bold">
+          <i data-lucide="phone-call" class="w-4 h-4"></i> Call: 6304433996
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION: Grand Andhra Visual Ambiance -->
+  <section id="hero" class="relative overflow-hidden bg-gradient-to-b from-brand-dark via-brand-deep to-brand-emerald text-white pt-10 pb-20 lg:pt-14 lg:pb-28">
+    
+    <!-- Lively Animated Floating Andhra Spices (Background) -->
+    <div class="absolute inset-0 pointer-events-none overflow-hidden opacity-30">
+      <div class="floating-spice spice-chili top-10 left-[8%] animate-float-slow">🌶️</div>
+      <div class="floating-spice spice-leaf top-40 right-[12%] animate-float-mid">🌿</div>
+      <div class="floating-spice spice-garlic bottom-24 left-[15%] animate-float-fast">🧄</div>
+      <div class="floating-spice spice-mustard top-1/2 left-[3%] animate-float-mid">✨</div>
+      <div class="floating-spice spice-chili bottom-10 right-[5%] animate-float-slow">🌶️</div>
+      <div class="floating-spice spice-seed top-20 right-[40%] animate-float-fast">🍃</div>
+    </div>
+
+    <!-- Background Subtle Halftone / Mandala Glow -->
+    <div class="absolute -top-32 -left-32 w-96 h-96 bg-brand-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute top-1/3 -right-32 w-96 h-96 bg-brand-chili/15 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Content -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <!-- Poster Tagline Pill -->
+          <div class="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500/20 to-brand-gold/10 border border-brand-gold/40 px-4 py-1.5 rounded-full text-brand-goldLight text-xs sm:text-sm font-semibold tracking-wide shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-brand-gold animate-ping"></span>
+            <span>నిజమైన రుచి... ఇంటి వంటల అభిమానం...</span>
+          </div>
+
+          <!-- Main Hero Title -->
+          <h1 class="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-[1.15]">
+            <span class="text-white">Authentic Andhra</span> <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-goldLight via-brand-gold to-amber-400">
+              Homemade Pickles
+            </span> <br>
+            <span class="text-2xl sm:text-3xl lg:text-4xl text-emerald-200 font-sans font-bold">
+              & Traditional Karam Podulu
+            </span>
+          </h1>
+
+          <!-- Subtitle / Poster Features -->
+          <p class="text-base sm:text-lg text-emerald-100/90 max-w-xl mx-auto lg:mx-0 leading-relaxed font-normal">
+            Made with <strong class="text-brand-gold font-semibold">100% fresh ingredients</strong>, farm-fresh country chicken, tender mutton, coastal prawns, and stone-ground traditional Andhra spices.
+          </p>
+
+          <!-- Dedicated Spacious Highlight for No Chemical Preservatives -->
+          <div class="py-2.5 flex items-center justify-center lg:justify-start">
+            <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-2xl bg-brand-dark/80 border border-brand-gold/60 text-amber-200 text-xs sm:text-sm font-bold shadow-lg backdrop-blur-sm">
+              <span class="flex h-2.5 w-2.5 relative">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-gold opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-chili"></span>
+              </span>
+              <span class="tracking-wide">🌿 No Chemical Preservatives</span>
+              <span class="text-white/30">•</span>
+              <span class="text-emerald-300 font-telugu text-xs font-normal">కృత్రిమ ప్రిజర్వేటివ్స్ లేవు</span>
+            </div>
+          </div>
+
+          <!-- 4 Pillars Badges from Poster -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
+            <div class="bg-brand-dark/60 border border-emerald-700/50 backdrop-blur rounded-xl p-3 text-center hover:border-brand-gold/50 transition">
+              <span class="text-2xl block mb-1">🌶️</span>
+              <p class="font-bold text-xs uppercase tracking-wider text-amber-300">SPICY</p>
+              <p class="text-[10px] text-gray-300">గుంటూరు కారం</p>
+            </div>
+            <div class="bg-brand-dark/60 border border-emerald-700/50 backdrop-blur rounded-xl p-3 text-center hover:border-brand-gold/50 transition">
+              <span class="text-2xl block mb-1">🥣</span>
+              <p class="font-bold text-xs uppercase tracking-wider text-amber-300">HOMEMADE</p>
+              <p class="text-[10px] text-gray-300">100% ఇంటి తయారీ</p>
+            </div>
+            <div class="bg-brand-dark/60 border border-emerald-700/50 backdrop-blur rounded-xl p-3 text-center hover:border-brand-gold/50 transition">
+              <span class="text-2xl block mb-1">🌿</span>
+              <p class="font-bold text-xs uppercase tracking-wider text-amber-300">FRESH</p>
+              <p class="text-[10px] text-gray-300">తాజా దినుసులు</p>
+            </div>
+            <div class="bg-brand-dark/60 border border-emerald-700/50 backdrop-blur rounded-xl p-3 text-center hover:border-brand-gold/50 transition">
+              <span class="text-2xl block mb-1">🛡️</span>
+              <p class="font-bold text-xs uppercase tracking-wider text-amber-300">HYGIENIC</p>
+              <p class="text-[10px] text-gray-300">సురక్షిత ప్యాకింగ్</p>
+            </div>
+          </div>
+
+          <!-- Quantity Highlight Bar from Poster -->
+          <div class="p-3.5 rounded-xl bg-gradient-to-r from-brand-gold/20 via-brand-dark to-brand-gold/20 border border-brand-gold/30 flex flex-wrap items-center justify-between gap-3 text-xs sm:text-sm">
+            <div class="flex items-center gap-2">
+              <i data-lucide="scale" class="w-5 h-5 text-brand-gold"></i>
+              <span><strong>Quantity Available:</strong> 100g to 5kg</span>
+            </div>
+            <span class="text-emerald-300 font-telugu text-xs">హండ్రెడ్ గ్రామ్స్ నుండి ఫైవ్ కేజీల వరకు</span>
+          </div>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row items-center gap-4 pt-2 justify-center lg:justify-start">
+            <a href="#menu" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-brand-chili to-red-700 hover:from-red-600 hover:to-brand-chili text-white font-extrabold px-8 py-4 rounded-full text-base shadow-xl shadow-red-950/50 hover:shadow-red-900/80 transform hover:-translate-y-0.5 transition duration-200">
+              <i data-lucide="utensils" class="w-5 h-5"></i>
+              <span>Order Pickles Now</span>
+            </a>
+            
+            <a href="https://wa.me/916304433996?text=Hello%20MS%20Pickles,%20I%20want%20to%20order%20pickles." target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-500 text-white font-bold px-6 py-4 rounded-full text-base shadow-lg shadow-green-950/40 transform hover:-translate-y-0.5 transition duration-200">
+              <i data-lucide="message-circle" class="w-5 h-5"></i>
+              <span>WhatsApp: 6304433996</span>
+            </a>
+
+            <button onclick="openPosterModal()" class="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 px-5 py-4 rounded-full border border-brand-gold/50 text-brand-goldLight hover:bg-brand-gold/10 font-semibold text-sm transition">
+              <i data-lucide="image" class="w-4 h-4"></i>
+              <span>View Poster</span>
+            </button>
+          </div>
+
+          <!-- Trust Badges with Generous Spacing -->
+          <div class="mt-6 pt-4 border-t border-white/10 flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-4 text-xs text-emerald-200/90">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 border border-white/15 backdrop-blur-sm">
+              <i data-lucide="truck" class="w-4 h-4 text-brand-gold"></i> Doorstep Delivery Available
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 border border-white/15 backdrop-blur-sm">
+              <i data-lucide="clock" class="w-4 h-4 text-brand-gold"></i> Freshly Made in Small Batches
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-brand-chili/30 border border-red-500/40 text-amber-200 backdrop-blur-sm font-bold shadow-sm">
+              <i data-lucide="shield-check" class="w-4 h-4 text-brand-gold"></i> No Preservatives (Pure & Natural)
+            </span>
+          </div>
+
+        </div>
+
+        <!-- Right Visual: Star Product Glass Jar & Lively Poster Element -->
+        <div class="lg:col-span-5 relative">
+          
+          <!-- Outer Decorative Rings -->
+          <div class="relative mx-auto max-w-md">
+            <div class="absolute -inset-4 bg-gradient-to-tr from-brand-gold/30 via-brand-chili/30 to-brand-emerald rounded-3xl blur-2xl opacity-60 animate-pulse"></div>
+
+            <!-- Main Product Card Showcasing Spicy Chicken Pickle -->
+            <div class="relative bg-brand-deep/90 border-2 border-brand-gold/60 rounded-3xl p-6 shadow-2xl backdrop-blur-md overflow-hidden">
+              
+              <!-- Floating Corner Badge -->
+              <div class="absolute top-4 right-4 z-20">
+                <span class="inline-flex items-center gap-1 bg-brand-chili text-white font-extrabold text-xs px-3 py-1 rounded-full shadow-lg border border-red-300">
+                  <i data-lucide="flame" class="w-3.5 h-3.5"></i> #1 BEST SELLER
+                </span>
+              </div>
+
+              <!-- Star Product Image with Golden Halo -->
+              <div class="relative group cursor-pointer overflow-hidden rounded-2xl border border-brand-gold/30 mb-4 bg-brand-dark">
+                <img src="public/hero_chicken_pickle.jpg" alt="MS Pickles Spicy Chicken Pickle" class="w-full h-72 object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+
+                <div class="absolute bottom-3 left-4 right-4 flex items-end justify-between">
+                  <div>
+                    <span class="text-xs font-bold text-amber-300 tracking-wider uppercase">Our Signature Delicacy</span>
+                    <h3 class="text-xl font-display font-extrabold text-white">SPICY CHICKEN PICKLE</h3>
+                    <p class="text-xs text-amber-100 font-telugu">చికెన్ పచ్చడి • Made with Fresh Chicken</p>
+                  </div>
+                  <span class="bg-brand-gold text-brand-dark font-black text-sm px-2.5 py-1 rounded-lg shadow">
+                    ₹250 <span class="text-[10px] font-normal">/ 250g</span>
+                  </span>
+                </div>
+              </div>
+
+              <!-- Quick Selector for Hero Card -->
+              <div class="space-y-3">
+                <div class="flex items-center justify-between text-xs text-gray-300">
+                  <span>Select Size:</span>
+                  <span class="text-brand-gold font-semibold">100g to 5kg Available</span>
+                </div>
+
+                <!-- Weight Pills -->
+                <div class="grid grid-cols-3 gap-2" id="heroWeightSelector">
+                  <button type="button" onclick="selectHeroWeight('250g', 250)" class="hero-weight-btn active py-1.5 text-xs font-bold rounded-lg border border-brand-gold bg-brand-gold text-brand-dark transition">
+                    250g (₹250)
+                  </button>
+                  <button type="button" onclick="selectHeroWeight('500g', 480)" class="hero-weight-btn py-1.5 text-xs font-bold rounded-lg border border-white/20 hover:border-brand-gold text-white transition">
+                    500g (₹480)
+                  </button>
+                  <button type="button" onclick="selectHeroWeight('1kg', 900)" class="hero-weight-btn py-1.5 text-xs font-bold rounded-lg border border-white/20 hover:border-brand-gold text-white transition">
+                    1 kg (₹900)
+                  </button>
+                </div>
+
+                <!-- Action Button -->
+                <div class="grid grid-cols-2 gap-2 pt-2">
+                  <button onclick="addHeroChickenToCart()" class="w-full flex items-center justify-center gap-1.5 bg-gradient-to-r from-brand-gold to-amber-500 hover:from-amber-400 hover:to-amber-500 text-brand-dark font-black py-2.5 rounded-xl text-xs sm:text-sm shadow-md transition transform active:scale-95">
+                    <i data-lucide="shopping-cart" class="w-4 h-4"></i> Add to Cart
+                  </button>
+                  
+                  <button onclick="quickOrderHeroChicken()" class="w-full flex items-center justify-center gap-1.5 bg-green-600 hover:bg-green-500 text-white font-bold py-2.5 rounded-xl text-xs sm:text-sm shadow-md transition transform active:scale-95">
+                    <i data-lucide="zap" class="w-4 h-4"></i> Quick WhatsApp
+                  </button>
+                </div>
+              </div>
+
+              <!-- Trust Tag below hero card -->
+              <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-around text-center text-[11px] text-gray-300">
+                <span>🔥 Guntur Chili</span>
+                <span>•</span>
+                <span>🍗 Country Chicken</span>
+                <span>•</span>
+                <span>🌿 Cold-Pressed Oil</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Wavy Bottom Divider -->
+    <div class="absolute bottom-0 left-0 right-0 leading-none">
+      <svg class="w-full h-8 sm:h-12 text-brand-cream fill-current" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0 C150,90 350,-40 500,40 C650,120 900,20 1200,60 L1200,120 L0,120 Z"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- QUICK STATS / POSTER HIGHLIGHTS STRIP -->
+  <section class="py-6 bg-brand-cream border-b border-amber-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+        
+        <div class="p-3 bg-white rounded-2xl shadow-sm border border-amber-100 flex items-center gap-3">
+          <div class="w-12 h-12 rounded-xl bg-amber-50 flex items-center justify-center text-brand-amber shrink-0">
+            <i data-lucide="heart-handshake" class="w-6 h-6"></i>
+          </div>
+          <div class="text-left">
+            <h4 class="font-extrabold text-sm text-gray-900">100% Homemade</h4>
+            <p class="text-xs text-gray-500">Pure home kitchen recipes</p>
+          </div>
+        </div>
+
+        <div class="p-3 bg-white rounded-2xl shadow-sm border border-amber-100 flex items-center gap-3">
+          <div class="w-12 h-12 rounded-xl bg-red-50 flex items-center justify-center text-brand-chili shrink-0">
+            <i data-lucide="flame" class="w-6 h-6"></i>
+          </div>
+          <div class="text-left">
+            <h4 class="font-extrabold text-sm text-gray-900">Authentic Andhra</h4>
+            <p class="text-xs text-gray-500">Traditional spicy flavors</p>
+          </div>
+        </div>
+
+        <div class="p-3 bg-white rounded-2xl shadow-sm border border-amber-100 flex items-center gap-3">
+          <div class="w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center text-green-600 shrink-0">
+            <i data-lucide="package-check" class="w-6 h-6"></i>
+          </div>
+          <div class="text-left">
+            <h4 class="font-extrabold text-sm text-gray-900">100g to 5kg Packs</h4>
+            <p class="text-xs text-gray-500">From trial packs to bulk</p>
+          </div>
+        </div>
+
+        <div class="p-3 bg-white rounded-2xl shadow-sm border border-amber-100 flex items-center gap-3">
+          <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600 shrink-0">
+            <i data-lucide="truck" class="w-6 h-6"></i>
+          </div>
+          <div class="text-left">
+            <h4 class="font-extrabold text-sm text-gray-900">Doorstep Delivery</h4>
+            <p class="text-xs text-gray-500">Fast pan-India dispatch</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED STAR: THE SPICY CHICKEN PICKLE SPOTLIGHT -->
+  <section id="featured" class="py-14 sm:py-20 bg-gradient-to-b from-brand-cream to-amber-50/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-gradient-to-br from-brand-deep via-brand-emerald to-brand-dark rounded-3xl p-6 sm:p-10 lg:p-12 text-white shadow-2xl border-2 border-brand-gold/40 relative overflow-hidden">
+        
+        <!-- Decorative Glow -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 bg-brand-gold/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+          
+          <!-- Image with zoom -->
+          <div class="lg:col-span-5 text-center">
+            <div class="relative inline-block group">
+              <div class="relative w-full max-w-sm mx-auto rounded-2xl overflow-hidden border-4 border-brand-gold/70 shadow-2xl">
+                <img src="public/hero_chicken_pickle.jpg" alt="Spicy Chicken Pickle Jar" class="w-full h-80 sm:h-96 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                <span class="absolute top-3 left-3 bg-brand-chili text-white font-extrabold text-xs px-3 py-1 rounded-full shadow">
+                  🔥 Fiery Guntur Spiced
+                </span>
+                <span class="absolute bottom-3 right-3 bg-brand-dark/90 text-amber-300 font-bold text-xs px-3 py-1 rounded-full border border-brand-gold/40">
+                  Made Fresh Daily
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature Description -->
+          <div class="lg:col-span-7 space-y-5">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-gold/20 text-brand-goldLight text-xs font-bold uppercase tracking-wider border border-brand-gold/40">
+              Featured Star Delicacy • చికెన్ పచ్చడి
+            </div>
+
+            <h2 class="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white leading-tight">
+              SPICY CHICKEN PICKLE
+            </h2>
+            <p class="text-brand-goldLight font-medium text-lg">
+              Made with Fresh Chicken & Authentic Spices
+            </p>
+
+            <p class="text-emerald-100 text-sm sm:text-base leading-relaxed">
+              Our signature Chicken Pickle is crafted following time-tested ancestral Andhra recipes. High quality boneless chicken chunks are marinated in stone-ground Guntur chili powder, roasted coriander, fragrant cloves, garlic cloves, and fresh curry leaves, cooked in cold-pressed oil until crispy outside and succulent inside.
+            </p>
+
+            <!-- Highlights Checklist -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs sm:text-sm">
+              <div class="flex items-center gap-2">
+                <span class="w-5 h-5 rounded-full bg-brand-gold text-brand-dark flex items-center justify-center font-bold text-xs">✓</span>
+                <span>Succulent Boneless Meat Pieces</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-5 h-5 rounded-full bg-brand-gold text-brand-dark flex items-center justify-center font-bold text-xs">✓</span>
+                <span>Authentic Guntur Red Chili Heat</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-5 h-5 rounded-full bg-brand-gold text-brand-dark flex items-center justify-center font-bold text-xs">✓</span>
+                <span>Crunchy Garlic & Curry Leaves</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-5 h-5 rounded-full bg-brand-gold text-brand-dark flex items-center justify-center font-bold text-xs">✓</span>
+                <span>Shelf life: 3 Months in Refrigerator</span>
+              </div>
+            </div>
+
+            <!-- Price & Order CTA -->
+            <div class="pt-4 flex flex-wrap items-center gap-4">
+              <div>
+                <span class="text-xs text-gray-300 block">Starting from:</span>
+                <span class="text-2xl font-black text-brand-gold">₹110 <span class="text-xs text-gray-300 font-normal">/ 100g</span></span>
+                <span class="text-sm text-amber-200 ml-2">(₹250 for 250g)</span>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <button onclick="openProductDetailModal('chicken_pickle')" class="px-5 py-3 rounded-full bg-gradient-to-r from-brand-gold to-amber-500 text-brand-dark font-extrabold text-sm shadow-lg hover:scale-105 transition flex items-center gap-2">
+                  <i data-lucide="eye" class="w-4 h-4"></i> View Options & Order
+                </button>
+                <a href="https://wa.me/916304433996?text=Hi%20MS%20Pickles,%20I%20want%20to%20order%20the%20Spicy%20Chicken%20Pickle!" target="_blank" class="px-5 py-3 rounded-full bg-green-600 hover:bg-green-500 text-white font-bold text-sm shadow-lg hover:scale-105 transition flex items-center gap-2">
+                  <i data-lucide="message-square" class="w-4 h-4"></i> WhatsApp Order
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MAIN CATALOG / MENU SECTION -->
+  <section id="menu" class="py-16 sm:py-24 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-gold/15 text-brand-amber text-xs font-bold uppercase tracking-wider border border-brand-gold/30">
+          🌿 OUR HOMEMADE PICKLES & SPICE POWDERS
+        </div>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-gray-900">
+          Taste the Royal Flavors of Andhra
+        </h2>
+        <p class="text-gray-600 text-sm sm:text-base font-telugu">
+          మా వద్ద లభించే రుచికరమైన శాకాహార, మాంసాహార పచ్చళ్ళు మరియు కారప్పొడులు
+        </p>
+        <p class="text-xs sm:text-sm text-gray-500">
+          Available in multiple packaging sizes from <strong class="text-brand-deep">100g trial packs up to 5kg bulk jars</strong>. Select your preferred size and order seamlessly via WhatsApp or online cart!
+        </p>
+      </div>
+
+      <!-- Controls: Category Tabs & Search Bar -->
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 mb-8">
+        
+        <!-- Category Filter Pills -->
+        <div class="flex flex-wrap items-center justify-center gap-2" id="categoryFilters">
+          <button onclick="setCategoryFilter('all')" class="cat-pill active px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition shadow-sm">
+            All Items (అన్నీ)
+          </button>
+          <button onclick="setCategoryFilter('non-veg')" class="cat-pill px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition shadow-sm">
+            🍗 Non-Veg Pickles (మాంసాహారం)
+          </button>
+          <button onclick="setCategoryFilter('veg')" class="cat-pill px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition shadow-sm">
+            🥬 Veg Pickles (శాకాహారం)
+          </button>
+          <button onclick="setCategoryFilter('podi')" class="cat-pill px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition shadow-sm">
+            🌶️ Karam Podulu (కారప్పొడులు)
+          </button>
+        </div>
+
+        <!-- Search & Spice Filter -->
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <!-- Search Input -->
+          <div class="relative flex-1 md:w-64">
+            <i data-lucide="search" class="w-4 h-4 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2"></i>
+            <input type="text" id="searchInput" placeholder="Search pickle or podi..." 
+                   class="w-full pl-9 pr-4 py-2 rounded-full text-xs sm:text-sm border border-gray-300 focus:outline-none focus:border-brand-emerald focus:ring-2 focus:ring-brand-emerald/20 transition">
+          </div>
+
+          <!-- Spice Filter Dropdown -->
+          <select id="spiceFilter" class="px-3 py-2 rounded-full text-xs sm:text-sm border border-gray-300 bg-white focus:outline-none focus:border-brand-emerald">
+            <option value="all">All Spice Levels</option>
+            <option value="mild">Mild (🌶️)</option>
+            <option value="medium">Medium (🌶️🌶️)</option>
+            <option value="hot">Fiery Hot (🌶️🌶️🌶️)</option>
+          </select>
+        </div>
+
+      </div>
+
+      <!-- Quantity Availability Banner Note from Poster -->
+      <div class="mb-8 p-3 rounded-2xl bg-amber-50 border border-amber-200/80 flex items-center justify-between gap-4 text-xs sm:text-sm text-amber-900">
+        <div class="flex items-center gap-2">
+          <span class="text-xl">⚖️</span>
+          <span><strong>Custom Quantities:</strong> 100g, 250g, 500g, 1kg, 2kg & 5kg Available for all items!</span>
+        </div>
+        <span class="hidden sm:inline font-telugu text-amber-800 text-xs">హండ్రెడ్ గ్రామ్స్ నుండి ఫైవ్ కేజీల వరకు</span>
+      </div>
+
+      <!-- Products Grid (Dynamically Populated by app.js) -->
+      <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <!-- Injected via JavaScript -->
+      </div>
+
+      <!-- Empty State -->
+      <div id="emptyState" class="hidden text-center py-16">
+        <div class="w-16 h-16 mx-auto mb-4 text-gray-400">
+          <i data-lucide="package-x" class="w-16 h-16"></i>
+        </div>
+        <h3 class="text-lg font-bold text-gray-800">No items found</h3>
+        <p class="text-sm text-gray-500">Try changing your search term or category filter.</p>
+        <button onclick="resetFilters()" class="mt-4 px-4 py-2 bg-brand-emerald text-white text-xs font-bold rounded-full">
+          Reset All Filters
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ORIGINAL POSTER SECTION (With Zoom and Authenticity) -->
+  <section id="poster-section" class="py-16 bg-gradient-to-b from-brand-creamDark to-amber-100/50 border-y border-amber-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Left: Poster Thumbnail with Preview Click -->
+        <div class="lg:col-span-5 text-center">
+          <div class="relative group cursor-pointer inline-block" onclick="openPosterModal()">
+            <div class="relative max-w-sm mx-auto rounded-2xl overflow-hidden shadow-2xl border-4 border-brand-gold/60 transform group-hover:scale-[1.02] transition-all duration-300">
+              <img src="public/poster.jpg" alt="Official MS Pickles Menu Poster" class="w-full object-cover">
+              
+              <!-- Hover Overlay -->
+              <div class="absolute inset-0 bg-brand-dark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                <span class="px-4 py-2 bg-brand-gold text-brand-dark font-extrabold text-sm rounded-full shadow-lg flex items-center gap-1.5">
+                  <i data-lucide="zoom-in" class="w-4 h-4"></i> Click to Zoom Full Poster
+                </span>
+              </div>
+            </div>
+            <p class="mt-2 text-xs text-gray-500 flex items-center justify-center gap-1">
+              <i data-lucide="expand" class="w-3.5 h-3.5"></i> Click image to inspect full high-resolution poster
+            </p>
+          </div>
+        </div>
+
+        <!-- Right: Authentic Kitchen Story & Details -->
+        <div class="lg:col-span-7 space-y-5">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-emerald/10 text-brand-emerald text-xs font-bold uppercase tracking-wider border border-brand-emerald/30">
+            🏅 100% Genuine Homemade Promise
+          </div>
+
+          <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-gray-900 leading-tight">
+            Original MS Pickles Menu & Authentic Heritage
+          </h2>
+
+          <p class="text-gray-700 text-sm sm:text-base leading-relaxed">
+            Every bottle of pickle from MS Pickles is made in small, hygienic batches using traditional Andhra grandmother recipes. Unlike factory-made commercial pickles loaded with vinegars and chemical stabilizers, our pickles rely on pure wood-pressed edible oil, natural rock salt, and sun-cured spices for preservation.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <div class="p-4 bg-white rounded-2xl border border-amber-200 shadow-sm">
+              <h4 class="font-bold text-gray-900 text-sm flex items-center gap-2 mb-1">
+                <i data-lucide="sparkles" class="w-4 h-4 text-brand-gold"></i>
+                Authentic Spices
+              </h4>
+              <p class="text-xs text-gray-600">Pure Guntur red chilies, freshly roasted mustard seeds, fenugreek, and aromatic garlic cloves.</p>
+            </div>
+
+            <div class="p-4 bg-white rounded-2xl border border-amber-200 shadow-sm">
+              <h4 class="font-bold text-gray-900 text-sm flex items-center gap-2 mb-1">
+                <i data-lucide="drumstick" class="w-4 h-4 text-brand-chili"></i>
+                Farm-Fresh Non-Veg
+              </h4>
+              <p class="text-xs text-gray-600">Fresh local chicken, mutton, and coastal prawns selected and thoroughly cleaned with turmeric & salt.</p>
+            </div>
+
+            <div class="p-4 bg-white rounded-2xl border border-amber-200 shadow-sm">
+              <h4 class="font-bold text-gray-900 text-sm flex items-center gap-2 mb-1">
+                <i data-lucide="shield-check" class="w-4 h-4 text-green-600"></i>
+                Zero Chemicals
+              </h4>
+              <p class="text-xs text-gray-600">No artificial food colors, no synthetic acidity regulators, and zero chemical preservatives.</p>
+            </div>
+
+            <div class="p-4 bg-white rounded-2xl border border-amber-200 shadow-sm">
+              <h4 class="font-bold text-gray-900 text-sm flex items-center gap-2 mb-1">
+                <i data-lucide="map-pin" class="w-4 h-4 text-blue-600"></i>
+                Delivery Across India
+              </h4>
+              <p class="text-xs text-gray-600">Packed securely in leak-proof, food-grade airtight containers delivered to your door.</p>
+            </div>
+          </div>
+
+          <div class="pt-3 flex flex-wrap items-center gap-4">
+            <a href="https://wa.me/916304433996?text=Hi%20MS%20Pickles,%20I%20saw%20your%20poster%20and%20want%20to%20order." target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-green-600 hover:bg-green-500 text-white font-bold text-sm shadow-md transition">
+              <i data-lucide="message-circle" class="w-4 h-4"></i> Direct WhatsApp Order: 6304433996
+            </a>
+            <a href="tel:6304433996" class="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-gray-400 hover:border-gray-800 text-gray-800 font-bold text-sm transition">
+              <i data-lucide="phone" class="w-4 h-4"></i> Call 6304433996
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE MS PICKLES SECTION -->
+  <section id="why-us" class="py-16 sm:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-gray-900">
+          Why Andhra Food Lovers Prefer MS Pickles
+        </h2>
+        <p class="text-gray-600 text-sm sm:text-base">
+          Crafted with devotion to authentic tradition, cleanliness, and unforgettable flavour.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="p-8 rounded-3xl bg-brand-cream border border-amber-200/80 hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 rounded-2xl bg-amber-500/10 text-brand-amber flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <i data-lucide="flame" class="w-7 h-7"></i>
+          </div>
+          <h3 class="font-display font-bold text-xl text-gray-900 mb-3">Pure Wood-Pressed Oils</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            We use unadulterated cold-pressed groundnut and sesame oil that retains the authentic nutty aroma and serves as natural preservation without synthetic chemicals.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-3xl bg-brand-cream border border-amber-200/80 hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 rounded-2xl bg-red-500/10 text-brand-chili flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <i data-lucide="shield-check" class="w-7 h-7"></i>
+          </div>
+          <h3 class="font-display font-bold text-xl text-gray-900 mb-3">Hygienic Home Kitchen</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            Every batch is prepared in pristine conditions with sanitized stainless steel and stone mortars. Food-grade airtight containers protect flavor during transit.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-3xl bg-brand-cream border border-amber-200/80 hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 text-brand-emerald flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <i data-lucide="sparkles" class="w-7 h-7"></i>
+          </div>
+          <h3 class="font-display font-bold text-xl text-gray-900 mb-3">Custom Spice & Bulk Orders</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            Need mild spice for kids or NRI travel packs? Catering a wedding or family gathering with 5kg jars? Simply tell us on WhatsApp and we customize it for you!
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CUSTOMER REVIEWS / TESTIMONIALS -->
+  <section class="py-16 bg-gradient-to-b from-white to-brand-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
+        <span class="text-brand-amber font-bold text-xs uppercase tracking-wider">Happy Foodies</span>
+        <h2 class="font-display font-extrabold text-3xl text-gray-900">What Our Customers Say</h2>
+        <p class="text-sm text-gray-500">Real feedback from pickle lovers in Hyderabad, Vijayawada, Bangalore, and abroad!</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="p-6 bg-white rounded-2xl shadow-sm border border-amber-100 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex text-amber-400 text-sm">★★★★★</div>
+            <p class="text-sm text-gray-700 italic">
+              "The Spicy Chicken Pickle is hands down the best I have ever tasted! The pieces are crispy and juicy, not rubbery at all. The spice level is pure Andhra heaven with hot rice and ghee."
+            </p>
+          </div>
+          <div class="mt-4 pt-4 border-t border-gray-100 flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-brand-emerald text-white font-bold flex items-center justify-center text-xs">
+              SK
+            </div>
+            <div>
+              <h5 class="font-bold text-xs text-gray-900">Srinivas K.</h5>
+              <p class="text-[11px] text-gray-500">Hyderabad • Ordered 1kg Chicken Pickle</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6 bg-white rounded-2xl shadow-sm border border-amber-100 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex text-amber-400 text-sm">★★★★★</div>
+            <p class="text-sm text-gray-700 italic">
+              "Gongura pachadi and Munagaku Karampodi remind me of my grandmother's cooking in Guntur. Packing was 100% leak proof. Placing order on WhatsApp was super easy!"
+            </p>
+          </div>
+          <div class="mt-4 pt-4 border-t border-gray-100 flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-brand-chili text-white font-bold flex items-center justify-center text-xs">
+              LR
+            </div>
+            <div>
+              <h5 class="font-bold text-xs text-gray-900">Lakshmi Rao</h5>
+              <p class="text-[11px] text-gray-500">Bangalore • Regular Monthly Customer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6 bg-white rounded-2xl shadow-sm border border-amber-100 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex text-amber-400 text-sm">★★★★★</div>
+            <p class="text-sm text-gray-700 italic">
+              "Ordered 2kg Royyala (prawns) pachadi and Karivepaku podi. The aroma when you open the jar is unbelievable. Authentic Andhra taste guaranteed!"
+            </p>
+          </div>
+          <div class="mt-4 pt-4 border-t border-gray-100 flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-brand-amber text-white font-bold flex items-center justify-center text-xs">
+              VR
+            </div>
+            <div>
+              <h5 class="font-bold text-xs text-gray-900">Venkatesh R.</h5>
+              <p class="text-[11px] text-gray-500">Vijayawada • Ordered 2kg Prawns Pickle</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQS SECTION -->
+  <section id="faq" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-12 space-y-2">
+        <h2 class="font-display font-extrabold text-3xl text-gray-900">Frequently Asked Questions</h2>
+        <p class="text-sm text-gray-500">Everything you need to know about ordering and storage.</p>
+      </div>
+
+      <div class="space-y-4">
+        
+        <details class="group bg-brand-cream border border-amber-200/80 rounded-2xl p-5 cursor-pointer">
+          <summary class="font-bold text-sm sm:text-base text-gray-900 flex items-center justify-between list-none">
+            <span>How do I place an order?</span>
+            <span class="transition group-open:rotate-180 text-brand-amber"><i data-lucide="chevron-down" class="w-5 h-5"></i></span>
+          </summary>
+          <p class="mt-3 text-sm text-gray-600 leading-relaxed">
+            You can either add items to the cart on this website and click "Checkout via WhatsApp" or directly send a message on WhatsApp to <strong>6304433996</strong> with your required pickle and quantity. We will confirm your order and send bank/UPI details immediately.
+          </p>
+        </details>
+
+        <details class="group bg-brand-cream border border-amber-200/80 rounded-2xl p-5 cursor-pointer">
+          <summary class="font-bold text-sm sm:text-base text-gray-900 flex items-center justify-between list-none">
+            <span>What quantities are available? Can I order small trial packs or bulk?</span>
+            <span class="transition group-open:rotate-180 text-brand-amber"><i data-lucide="chevron-down" class="w-5 h-5"></i></span>
+          </summary>
+          <p class="mt-3 text-sm text-gray-600 leading-relaxed">
+            As highlighted on our official poster, we provide quantities from <strong>100 grams up to 5 kilograms</strong>! Whether you want a small 100g or 250g trial pack or large 5kg catering buckets for weddings, functions, and hostels, we have you covered.
+          </p>
+        </details>
+
+        <details class="group bg-brand-cream border border-amber-200/80 rounded-2xl p-5 cursor-pointer">
+          <summary class="font-bold text-sm sm:text-base text-gray-900 flex items-center justify-between list-none">
+            <span>What is the shelf life of Non-Veg and Veg Pickles?</span>
+            <span class="transition group-open:rotate-180 text-brand-amber"><i data-lucide="chevron-down" class="w-5 h-5"></i></span>
+          </summary>
+          <p class="mt-3 text-sm text-gray-600 leading-relaxed">
+            - <strong>Non-Veg Pickles (Chicken, Mutton, Prawns):</strong> 2 to 3 months when stored in the refrigerator with a clean, dry spoon. Always ensure a thin layer of oil rests on top.<br>
+            - <strong>Veg Pickles (Gongura, Avakaya, Pandumirchi, Tomato, Allam):</strong> 6 to 12 months in a cool, dry place.<br>
+            - <strong>Karam Podulu:</strong> 4 to 6 months in an airtight jar.
+          </p>
+        </details>
+
+        <details class="group bg-brand-cream border border-amber-200/80 rounded-2xl p-5 cursor-pointer">
+          <summary class="font-bold text-sm sm:text-base text-gray-900 flex items-center justify-between list-none">
+            <span>How is the shipping handled? Is there doorstep delivery?</span>
+            <span class="transition group-open:rotate-180 text-brand-amber"><i data-lucide="chevron-down" class="w-5 h-5"></i></span>
+          </summary>
+          <p class="mt-3 text-sm text-gray-600 leading-relaxed">
+            Yes! We provide safe doorstep delivery across India through trusted courier partners (DTDC, Professional Couriers, Speed Post). Items are packed in heavy-duty food-grade tamper-proof jars with multi-layer bubble wrap to guarantee zero leakage.
+          </p>
+        </details>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-dark text-white border-t border-brand-gold/30 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        
+        <!-- Brand Info -->
+        <div class="space-y-4 md:col-span-1">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full overflow-hidden border-2 border-brand-gold">
+              <img src="public/chicken_pickle.jpg" alt="MS Pickles" class="w-full h-full object-cover">
+            </div>
+            <div>
+              <span class="font-display font-black text-xl text-brand-gold">MS PICKLES</span>
+              <p class="text-[10px] text-emerald-200">Homemade Taste • Authentic Andhra</p>
+            </div>
+          </div>
+          <p class="text-xs text-gray-400 leading-relaxed">
+            Bringing authentic grandmother flavors to your dining table. Fresh country chicken, mutton, prawns, traditional pickles and nutritious karam podulu.
+          </p>
+          <div class="flex items-center gap-3 text-xs text-brand-gold">
+            <span>100g to 5kg Packs</span> • <span>Pan-India Delivery</span>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="font-display font-bold text-sm text-brand-gold mb-4 uppercase tracking-wider">Quick Navigation</h4>
+          <ul class="space-y-2 text-xs text-gray-300">
+            <li><a href="#hero" class="hover:text-brand-gold transition">Home</a></li>
+            <li><a href="#featured" class="hover:text-brand-gold transition">Spicy Chicken Pickle</a></li>
+            <li><a href="#menu" class="hover:text-brand-gold transition">Veg & Non-Veg Pickles</a></li>
+            <li><a href="#poster-section" class="hover:text-brand-gold transition">View Official Poster</a></li>
+            <li><a href="#faq" class="hover:text-brand-gold transition">FAQs</a></li>
+          </ul>
+        </div>
+
+        <!-- Categories from poster -->
+        <div>
+          <h4 class="font-display font-bold text-sm text-brand-gold mb-4 uppercase tracking-wider">Specialties</h4>
+          <ul class="space-y-2 text-xs text-gray-300">
+            <li>చికెన్ పచ్చడి (Chicken Pickle)</li>
+            <li>మటన్ పచ్చడి (Mutton Pickle)</li>
+            <li>రొయ్యల పచ్చడి (Prawns Pickle)</li>
+            <li>గోంగూర పచ్చడి (Gongura Pachadi)</li>
+            <li>పండుమిర్చి పచ్చడి (Pandu Mirchi)</li>
+            <li>కరివేపాకు & మునగాకు కారప్పొడి</li>
+          </ul>
+        </div>
+
+        <!-- Contact & Ordering Info -->
+        <div class="space-y-3">
+          <h4 class="font-display font-bold text-sm text-brand-gold mb-4 uppercase tracking-wider">Order & Enquiries</h4>
+          <div class="text-xs text-gray-300 space-y-2">
+            <p class="flex items-center gap-2">
+              <i data-lucide="phone" class="w-4 h-4 text-brand-gold"></i>
+              <a href="tel:6304433996" class="hover:text-white font-bold">6304433996</a>
+            </p>
+            <p class="flex items-center gap-2">
+              <i data-lucide="message-circle" class="w-4 h-4 text-green-400"></i>
+              <a href="https://wa.me/916304433996" target="_blank" class="hover:text-white font-bold text-green-400">WhatsApp: +91 6304433996</a>
+            </p>
+            <p class="flex items-start gap-2">
+              <i data-lucide="truck" class="w-4 h-4 text-brand-gold shrink-0 mt-0.5"></i>
+              <span>Doorstep Delivery across Andhra Pradesh, Telangana & all Indian states.</span>
+            </p>
+          </div>
+          <div class="pt-2">
+            <a href="https://wa.me/916304433996?text=Hello%20MS%20Pickles,%20I%20would%20like%20to%20place%20an%20order." target="_blank" class="inline-flex items-center gap-2 w-full justify-center bg-green-600 hover:bg-green-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs shadow-md transition">
+              <i data-lucide="send" class="w-3.5 h-3.5"></i> Chat on WhatsApp Now
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 border-t border-white/10 text-center text-xs text-gray-400 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p>© 2026 MS Pickles. Homemade Taste • Authentic Andhra Flavour. All rights reserved.</p>
+        <p class="text-[11px] text-gray-500">Order helpline: <strong class="text-gray-300">6304433996</strong></p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- FLOATING BOTTOM QUICK ACTION DOCK (For Mobile & Desktop) -->
+  <aside aria-label="Quick Actions" class="fixed bottom-4 right-4 z-40 flex flex-col items-end gap-3">
+    
+    <!-- Direct Call Button -->
+    <a href="tel:6304433996" title="Call MS Pickles Directly" class="flex items-center gap-2 bg-brand-deep text-brand-gold border border-brand-gold/60 hover:bg-brand-dark p-3.5 rounded-full shadow-2xl transform hover:scale-110 active:scale-95 transition-all duration-200">
+      <i data-lucide="phone-call" class="w-5 h-5"></i>
+      <span class="hidden md:inline text-xs font-bold text-white">Call 6304433996</span>
+    </a>
+
+    <!-- Direct WhatsApp Floating Button with Pulse Ring -->
+    <a href="https://wa.me/916304433996?text=Hello%20MS%20Pickles,%20I%20want%20to%20order%20pickles." target="_blank" title="Chat on WhatsApp" class="relative flex items-center gap-2.5 bg-green-500 hover:bg-green-600 text-white font-black px-4 py-3.5 rounded-full shadow-2xl shadow-green-900/50 transform hover:scale-105 active:scale-95 transition-all duration-200 group">
+      <span class="absolute -inset-1 bg-green-400 rounded-full animate-ping opacity-30"></span>
+      <i data-lucide="message-circle" class="w-6 h-6"></i>
+      <div class="text-left leading-tight hidden sm:block">
+        <span class="block text-[10px] text-green-100 font-semibold uppercase">Order on WhatsApp</span>
+        <span class="block text-xs font-bold tracking-wide">6304433996</span>
+      </div>
+    </a>
+
+  </aside>
+
+  <!-- SLIDE-OVER CART DRAWER -->
+  <div id="cartDrawerBackdrop" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300">
+    <div class="fixed inset-y-0 right-0 max-w-full flex pl-10">
+      <div id="cartDrawerContent" class="w-screen max-w-md bg-white shadow-2xl flex flex-col transform translate-x-full transition-transform duration-300 ease-in-out">
+        
+        <!-- Cart Header -->
+        <div class="p-5 bg-gradient-to-r from-brand-deep to-brand-emerald text-white flex items-center justify-between border-b border-brand-gold/30">
+          <div class="flex items-center gap-2.5">
+            <div class="w-9 h-9 rounded-full bg-brand-gold text-brand-dark flex items-center justify-center font-bold">
+              <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <h3 class="font-display font-extrabold text-lg text-white">Your Spice Basket</h3>
+              <p class="text-[11px] text-emerald-200">MS Pickles • Order Direct to WhatsApp</p>
+            </div>
+          </div>
+          <button id="closeCartBtn" class="p-2 text-emerald-200 hover:text-white rounded-full hover:bg-white/10 transition">
+            <i data-lucide="x" class="w-6 h-6"></i>
+          </button>
+        </div>
+
+        <!-- Free Delivery Progress Bar -->
+        <div class="bg-amber-50 px-5 py-3 border-b border-amber-200 text-xs">
+          <div class="flex items-center justify-between mb-1.5 font-bold text-amber-900">
+            <span id="freeDeliveryText">Add items for Free Delivery!</span>
+            <span id="freeDeliveryAmount">Min ₹999</span>
+          </div>
+          <div class="w-full bg-amber-200 rounded-full h-2 overflow-hidden">
+            <div id="freeDeliveryProgress" class="bg-gradient-to-r from-brand-gold to-green-500 h-2 rounded-full transition-all duration-300" style="width: 0%;"></div>
+          </div>
+        </div>
+
+        <!-- Cart Items List (Scrollable) -->
+        <div id="cartItemsList" class="flex-1 overflow-y-auto p-5 space-y-4">
+          <!-- Dynamically Injected -->
+        </div>
+
+        <!-- Cart Empty State -->
+        <div id="cartEmptyView" class="hidden flex-1 flex flex-col items-center justify-center p-8 text-center">
+          <div class="w-20 h-20 rounded-full bg-amber-100 text-brand-amber flex items-center justify-center mb-4">
+            <i data-lucide="shopping-basket" class="w-10 h-10"></i>
+          </div>
+          <h4 class="font-bold text-gray-800 text-lg mb-1">Your Basket is Empty</h4>
+          <p class="text-xs text-gray-500 max-w-xs mb-6">Explore our authentic chicken pickle, gongura, and karam podis from 100g to 5kg!</p>
+          <button onclick="closeCart(); location.href='#menu'" class="px-6 py-2.5 bg-brand-emerald text-white text-xs font-bold rounded-full shadow hover:bg-brand-deep transition">
+            Browse Menu
+          </button>
+        </div>
+
+        <!-- Cart Footer / Checkout Form -->
+        <div id="cartFooter" class="p-5 bg-gray-50 border-t border-gray-200 space-y-4">
+          
+          <!-- Bill Summary -->
+          <div class="space-y-1.5 text-xs text-gray-600">
+            <div class="flex justify-between">
+              <span>Items Subtotal</span>
+              <span id="cartSubtotal" class="font-bold text-gray-900">₹0</span>
+            </div>
+            <div class="flex justify-between">
+              <span>Delivery Fee</span>
+              <span id="cartDeliveryFee" class="font-bold text-green-600">₹60</span>
+            </div>
+            <div class="pt-2 border-t border-gray-200 flex justify-between text-base font-extrabold text-gray-900">
+              <span>Grand Total</span>
+              <span id="cartGrandTotal" class="text-brand-chili text-xl">₹0</span>
+            </div>
+          </div>
+
+          <!-- Quick Checkout Details Form -->
+          <div class="space-y-2 pt-1 border-t border-gray-200">
+            <p class="text-[11px] font-bold text-gray-700 uppercase tracking-wider">Delivery Information:</p>
+            <input type="text" id="custName" placeholder="Your Full Name *" class="w-full px-3 py-2 text-xs border border-gray-300 rounded-lg focus:outline-none focus:border-brand-emerald">
+            <input type="tel" id="custPhone" placeholder="Mobile Number (WhatsApp) *" class="w-full px-3 py-2 text-xs border border-gray-300 rounded-lg focus:outline-none focus:border-brand-emerald">
+            <textarea id="custAddress" rows="2" placeholder="Full Delivery Address & Pincode *" class="w-full px-3 py-2 text-xs border border-gray-300 rounded-lg focus:outline-none focus:border-brand-emerald"></textarea>
+          </div>
+
+          <!-- Checkout CTAs -->
+          <div class="space-y-2">
+            <!-- 1. Send Order Direct to WhatsApp (Primary) -->
+            <button onclick="submitOrderViaWhatsApp()" class="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-green-600 to-green-500 hover:from-green-500 hover:to-green-600 text-white font-black py-3.5 rounded-xl text-sm shadow-xl shadow-green-950/20 active:scale-95 transition">
+              <i data-lucide="message-circle" class="w-5 h-5"></i>
+              <span>Order via WhatsApp (6304433996)</span>
+            </button>
+
+            <!-- 2. Show Printable Bill / Online Confirmation -->
+            <button onclick="showOrderConfirmationModal()" class="w-full flex items-center justify-center gap-1.5 bg-white border border-gray-300 text-gray-700 font-bold py-2.5 rounded-xl text-xs hover:bg-gray-100 transition">
+              <i data-lucide="receipt" class="w-4 h-4"></i>
+              <span>Generate Printable Invoice / Receipt</span>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- PRODUCT DETAIL & CUSTOM WEIGHT MODAL -->
+  <div id="productDetailModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl border border-brand-gold/40 transform transition-all duration-300" id="productModalContent">
+      <!-- Injected via JavaScript -->
+    </div>
+  </div>
+
+  <!-- OFFICIAL POSTER VIEW MODAL -->
+  <div id="posterModal" class="fixed inset-0 bg-black/85 backdrop-blur-md z-50 hidden flex items-center justify-center p-4 sm:p-6" onclick="closePosterModal(event)">
+    <div class="relative bg-brand-dark rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto border-2 border-brand-gold/60 shadow-2xl p-4 sm:p-6" onclick="event.stopPropagation()">
+      <button onclick="closePosterModal()" class="absolute top-4 right-4 z-10 p-2 text-white bg-black/60 hover:bg-red-600 rounded-full transition">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+
+      <div class="text-center mb-4">
+        <h3 class="font-display font-extrabold text-xl text-brand-gold">MS Pickles Official Menu Poster</h3>
+        <p class="text-xs text-emerald-200">Homemade Taste • Authentic Andhra Flavour • Call 6304433996</p>
+      </div>
+
+      <div class="rounded-xl overflow-hidden border border-brand-gold/30 shadow-inner">
+        <img src="public/poster.jpg" alt="Official MS Pickles Menu Poster" class="w-full h-auto object-contain">
+      </div>
+
+      <div class="mt-4 flex flex-col sm:flex-row items-center justify-between gap-3 pt-3 border-t border-white/10">
+        <span class="text-xs text-gray-300">Quantities: <strong>100g to 5kg</strong> Available</span>
+        <a href="https://wa.me/916304433996?text=Hi%20MS%20Pickles,%20I%20am%20looking%20at%20your%20poster%20and%20want%20to%20order." target="_blank" class="px-5 py-2 rounded-full bg-green-500 hover:bg-green-600 text-white font-bold text-xs flex items-center gap-1.5 shadow">
+          <i data-lucide="message-circle" class="w-4 h-4"></i> Order this on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ORDER SUCCESS / PRINTABLE RECEIPT MODAL -->
+  <div id="receiptModal" class="fixed inset-0 bg-black/75 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl border border-gray-200 p-6 space-y-4" id="receiptContent">
+      <!-- Injected via JavaScript -->
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toastContainer" class="fixed top-24 right-4 z-50 flex flex-col gap-2 pointer-events-none"></div>
+
+  <!-- Audio Elements for Lively Feedback -->
+  <audio id="addSound" preload="auto">
+    <source src="https://assets.mixkit.co/active_storage/sfx/2869/2869-preview.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Main JavaScript App -->
+  <script src="app.js"></script>
+</body>
+</html>
